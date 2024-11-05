@@ -16,8 +16,8 @@
                 .then(response => response.json())
                 .then(data => {
                     alert("Latitude: " + latitude + "\nLongitude: " + longitude + "\nAddress: " + data);
-                    console.log("Latitude:", latitude, "Longitude:", longitude + "Address:", data);
-                    // You can use data.display_name for the address
+                    alert("Latitude: " + latitude + "\nLongitude: " + longitude + "\nData: " + JSON.stringify(data, null, 2));
+                    console.log("Latitude: " + latitude + "\nLongitude: " + longitude + "\nData: " + JSON.stringify(data, null, 2));
                 })
                 .catch(error => console.error("Error:", error));
 
