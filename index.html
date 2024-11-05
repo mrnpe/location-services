@@ -16,6 +16,7 @@
                 .then(response => response.json())
                 .then(data => {
                     alert("Latitude:", latitude, "Longitude:", longitude + "Address:", data);
+                    // You can use data.display_name for the address
                 })
                 .catch(error => console.error("Error:", error));
 
@@ -27,6 +28,7 @@
                 const latitude = position.coords.latitude;
                 const longitude = position.coords.longitude;
                 console.log("Latitude:", latitude, "Longitude:", longitude);
+                const apiKey = "";
                 reverseGeocode(latitude, longitude, apiKey);
             },
             (error) => {
